@@ -4,7 +4,7 @@ WORKDIR /usr/src/app/vue-app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm config set registry https://registry.npm.taobao.org && npm install
 
 EXPOSE 8080
 
